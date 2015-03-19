@@ -1,0 +1,4 @@
+{
+	"slave" : "test_app.py",
+	"logfile" : "/tmp/test_app.log"
+}
