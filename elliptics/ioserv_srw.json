@@ -28,7 +28,7 @@
 		"io_thread_num": 16,
 		"nonblocking_io_thread_num": 16,
 		"net_thread_num": 4,
-		"daemon": true,
+		"daemon": false,
 		"auth_cookie": "qwerty",
 		"bg_ionice_class": 3,
 		"bg_ionice_prio": 0,
