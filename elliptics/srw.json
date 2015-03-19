@@ -1,49 +1,47 @@
 {
-    "version": 2,
-    "paths": {
-        "plugins": "/usr/lib/cocaine",
-        "runtime": "/var/tmp/cocaine/ipc",
-        "spool": "/var/tmp/cocaine/spool"
-    },
-    "services": {
-        "logging": {
-            "type": "logging",
-            "args": {
-                "port": 12501
-            }
-        },
-        "node": {
-            "type": "node",
-            "args": {
-                "runlist": "default"
-            }
-        },
-        "storage": {
-            "type": "elliptics"
-        }
-    },
-    "storages": {
-        "core": {
-            "type": "elliptics",
-            "args": {
-                "nodes": [
-                    "localhost:1025:2"
-                ],
-                "groups": [1],
-                "verbosity": 2
-            }
-        }
-    },
-    "loggers": {
-        "core": {
-           "type": "files",
-            "args": {
-                "path": "/tmp/cocaine.log",
-                "verbosity": "debug"
-            }
-        }
-    },
-    "port-mapper": {
-        "range": [5100, 5200]
-    }
+	"version": 2,
+	"paths": {
+		"plugins": "/usr/lib/cocaine",
+		"runtime": "/var/tmp/cocaine/ipc",
+		"spool": "/var/tmp/cocaine/spool"
+	},
+	"services": {
+		"logging": {
+			"type": "logging",
+			"args": {
+				"port": 12501
+			}
+		},
+		"node": {
+			"type": "node",
+			"args": {
+				"runlist": "default"
+			}
+		},
+		"storage": {
+			"type": "elliptics"
+		}
+	},
+	"storages": {
+		"core": {
+			"type": "elliptics",
+			"args": {
+				"nodes": ["localhost:1025:2"],
+				"groups": [1],
+				"verbosity": 2
+			}
+		}
+	},
+	"loggers": {
+		"core": {
+			"type": "files",
+			"args": {
+				"path": "/tmp/cocaine.log",
+				"verbosity": "debug"
+			}
+		}
+	},
+	"port-mapper": {
+		"range": [5100, 5200]
+	}
 }
