@@ -11,4 +11,4 @@ cp srw.json /etc/elliptics
 
 #dd bs=64 count=10 if=/dev/urandom of=/elliptics/history/ids
 
-dnet_ioserv -c cp ioserv_srw.json /etc/elliptics/ioserv_srw.json
+dnet_ioserv -c /etc/elliptics/ioserv_srw.json
