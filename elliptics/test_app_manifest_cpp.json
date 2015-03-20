@@ -1,0 +1,4 @@
+{
+    "slave" : "test_app_cpp",
+    "logfile" : "/tmp/test_app.log"
+}
