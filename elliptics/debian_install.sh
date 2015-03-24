@@ -1,6 +1,6 @@
 #!/bin/bash
 apt-get update
-apt-get install curl
+apt-get install curl -y
 echo >> /etc/apt/sources.list
 echo "deb http://repo.reverbrain.com/wheezy/ current/amd64/" >> /etc/apt/sources.list
 echo "deb http://repo.reverbrain.com/wheezy/ current/all/" >> /etc/apt/sources.list
