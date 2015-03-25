@@ -2,6 +2,7 @@
 
 from cocaine.worker import Worker
 import elliptics
+import struct
 
 elog = elliptics.Logger("/tmp/worker", 0)
 cfg = elliptics.Config()
