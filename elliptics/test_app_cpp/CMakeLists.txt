@@ -15,5 +15,5 @@ include_directories(${elliptics_INCLUDE_DIRS} ${CocaineNative_INCLUDE_DIRS} ${LI
 
 
 add_executable(test_app_cpp main.cpp)
-target_link_libraries(srw_app_cpp elliptics_cpp ${CocaineNative_LIBRARIES} ${Boost_LIBRARIES}  ${elliptics_cpp_LIBRARIES} ${elliptics_LIBRARIES} ${LIBEV_LIBRARIES})
+target_link_libraries(test_app_cpp elliptics_cpp ${CocaineNative_LIBRARIES} ${Boost_LIBRARIES}  ${elliptics_cpp_LIBRARIES} ${elliptics_LIBRARIES} ${LIBEV_LIBRARIES})
 
